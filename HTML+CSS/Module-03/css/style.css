@@ -20,10 +20,11 @@ html {
   /* site navigation */
 
   .site-navigation {
+      font-size: 0;
       padding: 0;
       margin: 0;
       text-align: center;
-      padding:74px 160px 98px 160px;
+      padding:74px 0 98px 0;
   }
   .site-navigation li {
       display: inline-block;
@@ -39,14 +40,17 @@ html {
     color: #6ecff3;
   }
   .site-navigation li a {
+      font-size: 14px;
       text-align: center;
       color: #626262;
       text-transform: uppercase;
       text-decoration: none;
+      display: block;
   }
   /* information field */
   .intro-info {
       display: inline-block;
+      font-size: 0;
   }
   .block-info {
     display: inline-block;
@@ -55,10 +59,13 @@ html {
     
   }
   .block-info:nth-child(odd) {
-      margin-right: 57px ;
+    margin-right: 60px ;
   }
   .block-info:nth-child(-n+4) {
     margin-bottom: 136px;
+  }
+  .block-info:nth-child(n+5) {
+    margin-bottom: 56px;
   }
   img {
     display: block;
@@ -87,8 +94,13 @@ html {
    }
    .block-info p:last-child {
        margin: 0;
+       font-size: 14px;
    }
    /* button */
+   .button {
+    display: inline-block;
+    padding:0 380px 70px 360px;
+   }
    input[type="button"] {
        padding: 0;
        width: 164px;
@@ -97,12 +109,16 @@ html {
        background-color: #fff;
        border: 1px solid #626262;
        cursor: pointer;
-       margin: 56px 380px 70px 360px;
    }
-   input[value="Load more"]{
+   input[value="Load more"] {
        text-align: center;
        font-family: "Playfair Display", "Times", serif;
        font-size: 20px;
        color: #626262;
    }
+   input[type="button"]:hover,
+   input[type="button"]:focus {
+    color: #6ecff3;
+   }
+
 
