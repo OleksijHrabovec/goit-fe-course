@@ -23,7 +23,7 @@ img {
       display: table;
       clear: both;
   }
-  .conteiner {
+  .container {
       width: 1110px;
       margin: 0 auto;
   }
@@ -87,7 +87,7 @@ img {
 /* main products block-paragraf */
 .title-block {
     text-align: center;
-    padding-bottom: 85px;
+    margin-bottom: 85px;
 }
 .title-block h2 {
      margin: 0;
@@ -95,7 +95,7 @@ img {
      line-height: 32px;
      font-weight: 900;
      text-transform: uppercase;
-     padding-bottom: 30px;
+     margin-bottom: 30px;
 }
 .title-block::after {
     content: "";
@@ -110,7 +110,7 @@ img {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    padding-bottom: 104px;
+    margin-bottom: 104px;
 }
 .product-list li:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -173,8 +173,7 @@ img {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     line-height: 26px;
-    font-size: 0;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 .latest-news li {
     list-style: none;
@@ -185,7 +184,7 @@ img {
     margin-right: 30px;
 }
 .latest-news img {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 .latest-news li h2 {
     margin: 0;
@@ -193,7 +192,7 @@ img {
 }
 .latest-news h2 {
     font-size: 18px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 .news-line::after {
     content: "";
@@ -204,33 +203,32 @@ img {
     background-color:#1abc9c ;
 }
 .news-line {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 .latest-news li p {
      margin: 0;
      font-size: 14px;
      font-weight: 500;
-     padding-bottom: 18px;
+     margin-bottom: 18px;
 }
 
-/* button-news */
-.latest-news input[type="button"] {
-     padding: 0;
-     width: 160px;
-     height: 51px;
-     border-radius: 3px;
-     background-color:#1abc9c ;
-     border: 0 solid;
-     cursor: pointer;
+/* button-news */ 
+.button-news {
+     float: left;
+     border: 1px solid #1abc9c;
+     background: #1abc9c;
+     border-radius: 4px;
+     padding: 22px 42px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: normal;
+     text-align: center;
 }
-.latest-news input[value="Read More"] {
-    color: #fff;
-    font-weight: lighter;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
+.button-news:hover,
+.button-news:focus {
+    background: #fff;
+    color: #1abc9c;
 }
-.latest-news input[type="button"]:hover,
-input[type="button"]:focus {
-    color: #515151;
-   }
+k

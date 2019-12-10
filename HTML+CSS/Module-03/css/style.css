@@ -51,12 +51,11 @@ html {
   .intro-info {
       display: inline-block;
       font-size: 0;
+      margin-bottom: 70px;
   }
   .block-info {
     display: inline-block;
     width: 420px;
-    height: 468px;
-    
   }
   .block-info:nth-child(odd) {
     margin-right: 60px ;
@@ -75,7 +74,7 @@ html {
    .block-info img {
     height: 275px;
     width: 420px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
    }
    .paragraf-info {
        margin: 0;
@@ -84,13 +83,13 @@ html {
        font-weight: 200;
        font-size: 14px;
        color: #c1c1c1;
-       padding-bottom: 30px;
+       margin-bottom: 30px;
    }
    .block-info h2 {
        margin: 0;
        font-size: 30px;
        font-weight: 400;
-       padding-bottom: 40px;
+       margin-bottom: 40px;
    }
    .block-info p:last-child {
        margin: 0;
@@ -99,7 +98,7 @@ html {
    /* button */
    .button {
     display: inline-block;
-    padding:0 380px 70px 360px;
+    padding:0 380px 0 360px;
    }
    input[type="button"] {
        padding: 0;
