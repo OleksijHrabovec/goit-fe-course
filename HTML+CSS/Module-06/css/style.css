@@ -1,0 +1,303 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+  }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+.container {
+      width: 1200px;
+      margin: 0 auto;
+      color: rgb(153, 153, 153);
+  }
+
+  /* navigation-block */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 134px;
+    
+  }
+.logo {
+    align-items: center;
+}
+.logo a {
+    font-size: 30px;
+    font-weight: 900;
+    color: #95e1d3;
+    text-decoration: none;
+}
+.navigation-list {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 490px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+    position: relative;
+}
+.list a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #95e1d3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.list::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #f38181;
+    bottom: -16px;
+    left: 0px;
+    display: none;
+}
+.list a:hover {
+    color: #f38181;
+}
+.list:hover::after {
+    display: block;
+}
+
+/* main-paragraf */
+
+.main-paragraf {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    margin-bottom: 114px;
+}
+.main-paragraf p {
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24;
+}
+.main-paragraf h2 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+.main-paragraf::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #f38181;
+    bottom: -46px;
+    margin: 0 auto;
+}
+
+/* services-block */
+.services-block {
+    margin-bottom:94px ;
+}
+
+.services-content {
+    padding: 0;
+    margin: 0;
+    width: 1200px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services-list {
+    position: relative;
+    padding-left: 100px;
+    width: 400px;
+}
+.services-list img {
+    position: absolute;
+    left: 40px;
+}
+.services-list h2 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+.services-list p {
+    font-family: 15px;
+    margin: 0;
+}
+.services-list:nth-child(-n+3) {
+    margin-bottom: 100px;
+}
+ 
+/* team-block */
+.team-block {
+    margin-bottom: 100px;
+}
+/* описание команды */
+.team-description {
+    display: flex;
+    justify-content: center;
+}
+.team-description p {
+     width: 960px;
+     margin: 0;
+     text-align: center;
+     margin-bottom: 90px;
+ }
+
+/* какрточки команды */
+
+.team-members {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.team-list {
+    position: relative;
+}
+.team-content {
+    position: relative;
+    margin-bottom: 30px;
+}
+.team-list h2 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.team-list p {
+    margin: 0;
+    font-weight:400 ;
+    font-style: italic;
+}
+
+/* список соц. сеть для картинки сверху*/
+
+.top-picture-block {
+    position: absolute; 
+    align-items: center;
+    justify-content: center;
+    display: none;
+    top: 0;
+    width:380px;
+    height:470px;
+    background:linear-gradient(to bottom, rgba(243, 129, 129, 80%), rgba(252, 227, 138, 80%) ) ; 
+    transform: rotateX(-10px) rotateY(-10px);
+}
+.top-picture-content {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 225px;
+}
+.top-picture-content li {
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+}
+.top-picture-content li a {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-picture-content li img {
+    height: 26px;
+}
+/* фон для иконок соц. сетей */
+.top-picture-content li:hover {
+    background-color: #95e1d3;
+}
+/* бордер для списка иконок соц. сетей */
+.top-picture-content li:not(:last-child) {
+    border-right: 1px solid rgba(243, 129, 129, 80%);
+}
+/* появление верхней картинки при наведении */
+.team-content:hover .top-picture-block {
+    display: flex; 
+}
+/* фон под картинкой */
+.team-list::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    z-index: -1;
+}
+/* сдвиг картинки при фокусе */
+.team-content:hover {
+    transform: translate(-10px, -10px) ;
+}
+
+/* bottom-block */
+
+.bottom-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid rgba(153, 153, 153, 40%);
+    height: 62px;
+}
+.bottom-block p {
+    font-family: 'Montserrat', sans-serif;
+    font: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+}
+.bottom-block p span {
+    color: #f38181;
+}
+
+
+.input-field {
+    border: 1px solid rgba(153, 153, 153, 40%);
+    height: 42px;
+    width: 230px;
+    padding-left: 10px;
+}
+input[placeholder="Your Email..."] {
+    color: rgba(153, 153, 153, );
+    font-weight: lighter;
+    font-style: italic;
+}
+.perform-action {
+    border: none;
+    background-color: #95e1d3;
+    text-transform: uppercase;
+    color: #fff;
+    width: 152px;
+    height: 42px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.your-email {
+    display: flex;
+}
+
