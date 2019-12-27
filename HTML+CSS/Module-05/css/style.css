@@ -12,7 +12,6 @@ body {
     font-size: 18px;
     color: #515151;
     line-height: 32px;
-    width: 1600;
 }
 img {
     display: block;
@@ -27,7 +26,6 @@ img {
   .container {
       width: 1110px;
       margin: 0 auto;
-      background-color: #e9f0fd;
   }
 
   /* navigation block */
@@ -90,35 +88,45 @@ img {
     color: #1abc9c;
 }
 
+.collection-style {
+    background-color: #e9f0fd;
+}
 /* slider-block */
       /* text */
 .slider {
     color: #fff; 
     line-height: 32px;
     text-transform:uppercase ;
-    position: relative;
     margin-bottom: 100px;
+    position: relative;
+    
 }
-.slider-img {
+.slider-content {
+    position: relative;
     height: 600px;
-}
-.slider-text {
-    position: absolute;
-    display: block;
-    bottom: 280px;
-    left: 190px;
-    list-style: none;
     margin: 0;
     padding: 0;
 }
-.slider-text h2 {
+.slider-img {
+  width: 1110px;
+  height: 600px;
+}
+.slider-text {
+    list-style: none;
+}
+.text-transform {
+    position: absolute;
+    bottom: 280px;
+    left: 190px;
+}
+.slider-content h2 {
     font-size: 57px;
     font-weight: 900;
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
 }
-.slider-text p {
+.slider-content p {
     font-size: 18px;
     font-weight: 400;
     padding: 0;
@@ -222,9 +230,12 @@ img {
     bottom: 0;
 }
 .icon {
+    padding: 0;
     text-decoration: none;
-    display: inline-block;
     text-align: center;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
 }
 .icon:not(:last-child) {
     margin-right: 8px;
@@ -261,7 +272,7 @@ img {
 }
 .fa-shopping-cart {
     position: absolute;
-    font-size: 25px;  ф
+    font-size: 25px;  
     color: #fff;
     top: 12px;
     left: 12px;
