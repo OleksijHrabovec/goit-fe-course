@@ -23,13 +23,11 @@ body {
       color: rgb(153, 153, 153);
   }
 
-  /* navigation-block */
+  /* block */
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 134px;
-    
   }
 .logo {
     align-items: center;
@@ -45,9 +43,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    width: 490px;
+    min-width: 490px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 134px;
 }
 
 .list {
@@ -55,6 +54,7 @@ body {
     position: relative;
 }
 .list a {
+    display: block;
     font-size: 14px;
     font-weight: 600;
     color: #95e1d3;
@@ -73,40 +73,44 @@ body {
 }
 .list a:hover {
     color: #f38181;
+    transition: linear 250ms;
 }
 .list:hover::after {
     display: block;
+    transition: linear 250ms;
 }
 
 /* main-paragraf */
 
 .main-paragraf {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
     color: #000;
-    margin-bottom: 114px;
+    margin-bottom: 74px;
+    text-align: center;
+    
 }
 .main-paragraf p {
-    margin: 0;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24;
-}
-.main-paragraf h2 {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 900;
 }
+.main-paragraf span {
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24;
+    padding-bottom: 26px;
+}
+
 .main-paragraf::after {
     content: "";
-    position: absolute;
+    display: block;
     width: 60px;
     height: 4px;
     background-color: #f38181;
-    bottom: -46px;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 /* services-block */
@@ -165,7 +169,6 @@ body {
  }
 
 /* какрточки команды */
-
 .team-members {
     margin: 0;
     padding: 0;
@@ -179,6 +182,7 @@ body {
 .team-content {
     position: relative;
     margin-bottom: 30px;
+    
 }
 .team-list h2 {
     margin: 0;
@@ -187,11 +191,13 @@ body {
     color: #000;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
 }
 .team-list p {
     margin: 0;
     font-weight:400 ;
     font-style: italic;
+    text-align: center;
 }
 
 /* список соц. сеть для картинки сверху*/
@@ -218,20 +224,38 @@ body {
     width: 55px;
     height: 55px;
     background-color: #fce38a;
-}
-.top-picture-content li a {
-    height: 55px;
-    width: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 16px 0 0 14px;
 }
 .top-picture-content li img {
     height: 26px;
 }
+.facebookq {
+    background:url(../img/social-network/facebook1.png ) no-repeat;
+    margin-left: 6px;
+}
+.instagramq {
+    background:url(../img/social-network/instagram2.png) no-repeat;
+ 
+}
+.pinterestq {
+    background:url(../img/social-network/pinterest3.png) no-repeat;
+ 
+}
+.twitterq {
+    background: url(../img/social-network/twitter4.png) no-repeat;
+
+}
+.icon-top {
+    display: block;
+    width: 18px;
+    height: 55px;
+    width: 55px;
+}
+
 /* фон для иконок соц. сетей */
 .top-picture-content li:hover {
     background-color: #95e1d3;
+    transition: linear 250ms;
 }
 /* бордер для списка иконок соц. сетей */
 .top-picture-content li:not(:last-child) {
@@ -240,6 +264,7 @@ body {
 /* появление верхней картинки при наведении */
 .team-content:hover .top-picture-block {
     display: flex; 
+    transition: linear 250ms;
 }
 /* фон под картинкой */
 .team-list::before {
@@ -252,7 +277,8 @@ body {
 }
 /* сдвиг картинки при фокусе */
 .team-content:hover {
-    transform: translate(-10px, -10px) ;
+    transform: translate(-10px, -10px);
+    transition: linear 250ms;
 }
 
 /* bottom-block */
