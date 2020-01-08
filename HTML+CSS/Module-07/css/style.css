@@ -291,4 +291,18 @@ img {
     font-family:"Montserrat";
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+input:valid:hover {
+    outline: 4px solid green;
+  }
+input:invalid:hover {
+    outline: 4px solid red;
+}
+textarea:valid:hover {
+    outline: 4px solid green;
+  }
+textarea:invalid:hover {
+    outline: 4px solid red;
 }
