@@ -28,6 +28,7 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 134px;
   }
 .logo {
     align-items: center;
@@ -46,7 +47,6 @@ body {
     min-width: 490px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 134px;
 }
 
 .list {
@@ -88,7 +88,7 @@ body {
     text-align: center;
     
 }
-.main-paragraf p {
+.main-paragraf h2 {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -115,7 +115,7 @@ body {
 
 /* services-block */
 .services-block {
-    margin-bottom:94px ;
+    padding-bottom:94px ;
 }
 
 .services-content {
@@ -132,6 +132,66 @@ body {
     position: relative;
     padding-left: 100px;
     width: 400px;
+}
+.icon-alarm::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon/ALARM.png) no-repeat;
+    display: block;
+    left: 40px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+.icon-graph::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon/LINE\ GRAPH.png) no-repeat;
+    display: block;
+    left: 40px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+.icon-computer::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon/COMPUTER\ _\ OK.png) no-repeat;
+    display: block;
+    left: 40px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+.icon-book::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon/BOOK\ 2.png) no-repeat;
+    display: block;
+    left: 40px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+.icon-home::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon/HOME.png) no-repeat;
+    display: block;
+    left: 40px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+.icon-image::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon/IMAGE.png) no-repeat;
+    display: block;
+    left: 40px;
+    top: 0;
+    width: 32px;
+    height: 32px;
 }
 .services-list img {
     position: absolute;
@@ -224,26 +284,25 @@ body {
     width: 55px;
     height: 55px;
     background-color: #fce38a;
-    padding: 16px 0 0 14px;
+    
 }
-.top-picture-content li img {
-    height: 26px;
-}
+
 .facebookq {
     background:url(../img/social-network/facebook1.png ) no-repeat;
     margin-left: 6px;
+    background-position: center;
 }
 .instagramq {
     background:url(../img/social-network/instagram2.png) no-repeat;
- 
+    background-position: center;
 }
 .pinterestq {
     background:url(../img/social-network/pinterest3.png) no-repeat;
- 
+    background-position: center;
 }
 .twitterq {
     background: url(../img/social-network/twitter4.png) no-repeat;
-
+    background-position: center;
 }
 .icon-top {
     display: block;
@@ -253,7 +312,7 @@ body {
 }
 
 /* фон для иконок соц. сетей */
-.top-picture-content li:hover {
+.top-picture-content li a:hover {
     background-color: #95e1d3;
     transition: linear 250ms;
 }
