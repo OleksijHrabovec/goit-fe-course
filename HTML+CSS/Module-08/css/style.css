@@ -1,0 +1,259 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/montserrat/montserrat-v14-latin-700.woff) format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+  }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+body {
+    font-family: "Montserrat" ;
+    font-weight: 700;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    background: url(../img/background/Vector\ Smart\ Objec320t.png ) no-repeat top center ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.container {
+    margin: auto;
+    max-width: 320px;
+}
+/* header-block */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:15px 0 40px  0;
+}
+.logo-block {
+   order: 1;
+   text-align: center;
+}
+.text-logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.logo {
+    font-size: 20px;
+    
+}
+.btn-a-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.btn-a-logo a{
+    margin-right: 22px;
+}
+.button-sign-up {
+    border: none;
+    padding: 12px 18px;
+    background: initial;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* title-block */
+.title-block {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 210px;
+}
+.title-holiday {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 26px;
+}
+.paragraph-holiday {
+    margin: 0;
+    font-family:'Roboto',sans-serif;
+    font-weight: 200;
+    margin-bottom: 36px;
+    font-size: 18px;
+}
+.button-holiday {
+    border: none;
+    background:#ff4e50 ;
+    padding:14px 50px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* block-partner */
+.block-partner {
+    padding-bottom: 74px;
+}
+.title-partner {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.list-partner {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 38px;
+}
+.line-partner {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding-top: 120px;
+    font-weight: 300;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.paragraph-partner {
+    font-family: "Montserrat" ;
+    font-weight: 700;
+    font-size: 14px;
+}
+.person-1 {
+    position: relative;
+}
+.person-1 {
+    background: url(../img/icon_layar/1.png) no-repeat center top;
+}
+.person-1::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_share/Shape\ 1.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 94px;
+    right: 106px;
+    z-index: 1;
+}
+.person-1::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 3px solid #fff;
+    background: #ff4e50;
+    border-radius: 20px;
+    top: 86px;
+    right: 96px;
+}
+.person-2 {
+    position: relative;
+}
+.person-2 {
+    background: url(../img/icon_layar/2.png) no-repeat center top;
+}
+.person-2::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_share/Shape\ 2.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 94px;
+    right: 106px;
+    z-index: 1;
+}
+.person-2::after {
+    content: "";
+    position: absolute;
+     width: 36px;
+    height: 36px;
+    border: 3px solid #fff;
+    background: #1cd7ad;
+    border-radius: 20px;
+    top: 86px;
+    right: 96px;
+}
+.person-3 {
+    position: relative;
+}
+.person-3 {
+    background: url(../img/icon_layar/3.png) no-repeat center top;
+}
+.person-3::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_share/Shape3.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 94px;
+    right: 104px;
+    z-index: 1;
+}
+.person-3::after {
+    content: "";
+    position: absolute;
+     width: 36px;
+    height: 36px;
+    border: 3px solid #fff;
+    background: #ffa507;
+    border-radius: 20px;
+    top: 86px;
+    right: 96px;
+}
+.person-4 {
+    position: relative;
+    margin: 0;
+}
+.person-4 {
+    background: url(../img/icon_layar/4.png) no-repeat center top;
+}
+.person-4::before {
+    content: "";
+    position: absolute;
+    background: url(../img/icon_share/Shape4.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 96px;
+    right: 108px;
+    z-index: 1;
+}
+.person-4::after {
+    content: "";
+    position: absolute;
+     width: 36px;
+    height: 36px;
+    border: 3px solid #fff;
+    background: #4e73db;
+    border-radius: 20px;
+    top: 86px;
+    right: 96px;
+}
+.button-partner {
+    border: none;
+    background: initial;
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+    border-radius: 30px;
+    padding: 12px 70px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.button-block {
+    text-align: center;
+}

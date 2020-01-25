@@ -1,0 +1,97 @@
+@media(min-width:768px) {
+    body::before {
+        content: "";
+        background: url(../img/background/Vector\ Smart\ Object.png) no-repeat top center;
+    }
+    .container {
+        min-width: 660px;
+    }
+    .navigation {
+        padding-bottom: 130px;
+        padding-top: 36px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-block {
+        order: 0;
+    }
+    .btn-a-logo {
+        margin: 0;
+    }
+
+    .title-block {
+        padding-bottom: 304px;
+    }
+    .title-holiday {
+        font-size: 52px;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .paragraph-holiday {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .button-holiday {
+        padding:14px 22px;
+    }
+
+    .list-partner {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .person-3 {
+        margin: 0;
+    }
+    .line-partner {
+        min-width: 50%;
+    }
+    .button-partner {
+        padding: 12px 22px;
+    }
+}
+
+@media(min-width:1024px) {
+    body::before {
+        content: "";
+        background: url(../img/background/Vector\ Smart\ Object.png) no-repeat top center;
+    }
+    .container {
+        min-width: 960px;
+    }
+    .title-partner {
+        margin-bottom: 34px;
+    }
+    .list-partner {
+        flex-wrap: nowrap;
+    }
+    .line-partner {
+        min-width: 25%;
+        margin: 0;
+    }
+    .person-1::before {
+        right: 72px;
+    }
+    .person-1::after {
+        right: 62px;
+    }
+    .person-2::before {
+        right: 72px;
+    }
+    .person-2::after {
+        right: 62px;
+    }
+    .person-3::before {
+        right: 70px;
+    }
+    .person-3::after {
+        right: 62px;
+    }
+    .person-4::before {
+        right: 74px;
+    }
+    .person-4::after {
+        right: 62px;
+    }
+}
