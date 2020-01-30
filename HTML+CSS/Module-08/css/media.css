@@ -52,13 +52,13 @@
     }
 }
 
-@media(min-width:1024px) {
+@media(min-width:960px) {
     body::before {
         content: "";
         background: url(../img/background/Vector\ Smart\ Object.png) no-repeat top center;
     }
     .container {
-        min-width: 960px;
+        min-width: 942px;
     }
     .title-partner {
         margin-bottom: 34px;

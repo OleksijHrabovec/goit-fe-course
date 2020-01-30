@@ -4,6 +4,7 @@
     src: url(../font/montserrat/montserrat-v14-latin-700.woff) format("truetype");
     font-style: normal;
     font-weight: 700;
+    font-display: fallback;
 }
 
 html {
@@ -125,7 +126,6 @@ body::before {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 14px;
-    padding-top: 120px;
     font-weight: 300;
     max-width: 100%;
     margin-bottom: 30px;
@@ -135,11 +135,14 @@ body::before {
     font-weight: 700;
     font-size: 14px;
 }
+.paragraph-partner-element2 {
+    margin: 0;
+}
 .person-1 {
     position: relative;
 }
-.person-1 {
-    background: url(../img/icon_layar/1.png) no-repeat center top;
+.person-img-centr {
+    margin: 0 auto;
 }
 .person-1::before {
     content: "";
@@ -165,9 +168,6 @@ body::before {
 .person-2 {
     position: relative;
 }
-.person-2 {
-    background: url(../img/icon_layar/2.png) no-repeat center top;
-}
 .person-2::before {
     content: "";
     position: absolute;
@@ -191,9 +191,6 @@ body::before {
 }
 .person-3 {
     position: relative;
-}
-.person-3 {
-    background: url(../img/icon_layar/3.png) no-repeat center top;
 }
 .person-3::before {
     content: "";
@@ -219,9 +216,6 @@ body::before {
 .person-4 {
     position: relative;
     margin: 0;
-}
-.person-4 {
-    background: url(../img/icon_layar/4.png) no-repeat center top;
 }
 .person-4::before {
     content: "";
