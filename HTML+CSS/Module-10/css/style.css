@@ -147,7 +147,7 @@ body::before {
   font-weight: 500;
   line-height: 1.5;
   font-size: 30px;
-  font-size: 24;
+  font-size: 24px;
 }
 .main-title__title_underline::after {
   content: "";
@@ -219,7 +219,7 @@ body::before {
 
 /* иконки карточек */
 
-.card-collection__icon-alarm::before {
+.card-collection__list--icon-alarm::before {
   content: "";
   position: absolute;
   background: url(../img/icon/ALARM.svg) no-repeat;
@@ -229,7 +229,7 @@ body::before {
   width: 32px;
   height: 32px;
 }
-.card-collection__icon-graph::before {
+.card-collection__list--icon-graph::before {
   content: "";
   position: absolute;
   background: url(../img/icon/LINE\ GRAPH.svg) no-repeat;
@@ -239,7 +239,7 @@ body::before {
   width: 32px;
   height: 32px;
 }
-.card-collection__icon-computer::before {
+.card-collection__list--icon-computer::before {
   content: "";
   position: absolute;
   background: url(../img/icon/COMPUTER\ _\ OK.svg) no-repeat;
@@ -249,7 +249,7 @@ body::before {
   width: 32px;
   height: 32px;
 }
-.card-collection__icon-book::before {
+.card-collection__list--icon-book::before {
   content: "";
   position: absolute;
   background: url(../img/icon/BOOK\ 2.svg) no-repeat;
@@ -259,7 +259,7 @@ body::before {
   width: 32px;
   height: 32px;
 }
-.card-collection__icon-home::before {
+.card-collection__list--icon-home::before {
   content: "";
   position: absolute;
   background: url(../img/icon/HOME.svg) no-repeat;
@@ -269,7 +269,7 @@ body::before {
   width: 32px;
   height: 32px;
 }
-.card-collection__icon-image::before {
+.card-collection__list--icon-image::before {
   content: "";
   position: absolute;
   background: url(../img/icon/IMAGE.svg) no-repeat;
@@ -290,7 +290,7 @@ body::before {
   font-size: 14px;
 }
 .card-collection__line-paragraph {
-  font-family: 15px;
+  font-size: 15px;
   margin: 0;
   color: #999;
 }
@@ -398,7 +398,7 @@ body::before {
   background-color: #fce38a;
   
 }
-.team-block__icon-top {
+.team-block__icon_top {
   display: inline-block;
   height: 55px;
   width: 55px;
@@ -408,7 +408,7 @@ body::before {
 }
 
 /* фон для иконок соц. сетей */
-.team-block__icon-top:hover {
+.team-block__icon_top:hover {
   background-color: #f38181;
   -webkit-transition: linear 250ms;
   -o-transition: linear 250ms;
@@ -417,7 +417,7 @@ body::before {
 .team-block__icon_hove {
   fill: #f38181;
 }
-.team-block__icon-top:hover  .team-block__icon_hove {
+.team-block__icon_top:hover  .team-block__icon_hove {
   fill: #fff; 
 }
 /* бордер для списка иконок соц. сетей */
