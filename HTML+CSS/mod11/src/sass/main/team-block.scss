@@ -1,0 +1,155 @@
+
+.team-block {
+  margin-bottom: 100px;
+}
+
+//  описание команды 
+
+.team-block__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px;
+}
+.team-block__description-title {
+   width: 960px;
+   margin: 0;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 300;
+   color: $titlecolor;
+}
+
+//  какрточки команды 
+
+.team-block__members {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.team-block__members-list {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-color: $blue-color;
+    z-index: -1;
+  }
+}
+.team-block__image-block {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 380px;
+  max-height: 470px;
+  
+}
+.team-block__members-list-title {
+  margin: 0;
+  font-family: $fontmontserrat;
+  font-size: 14px;
+  color: $blackcolor;
+  font-weight: $font400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.team-block__members-list-paragraph{
+  margin: 0;
+  font-weight:$font400 ;
+  font-style: italic;
+  text-align: center;
+}
+
+//  список соц. сеть для картинки сверху
+
+.team-block__on-the-picture {
+  position: absolute; 
+  -webkit-box-align: center; 
+      -ms-flex-align: center; 
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  top: 0;
+  width:380px;
+  height:470px;
+  background:-webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 80%)), to(rgba(252, 227, 138, 80%)) ) ;
+  background:-o-linear-gradient(top, rgba(243, 129, 129, 80%), rgba(252, 227, 138, 80%) ) ;
+  background:linear-gradient(to bottom, rgba(243, 129, 129, 80%), rgba(252, 227, 138, 80%) ) ; 
+  -webkit-transform: rotateX(-10px) rotateY(-10px); 
+          transform: rotateX(-10px) rotateY(-10px);
+}
+.team-block__on-the-picture-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 225px;
+}
+.team-block__on-the-picture-line {
+  width: 55px;
+  height: 55px;
+  background-color: $orange-color;
+  
+}
+.team-block__icon_top {
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 72px;
+
+  &:hover {
+    background-color: $pink-color;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+  }
+}
+
+//  фон для иконок соц. сетей 
+
+.team-block__icon_hove {
+  fill: $pink-color;
+}
+.team-block__icon_top:hover  .team-block__icon_hove {
+  fill: $white-color; 
+}
+// бордер для списка иконок соц. сетей 
+.team-block__on-the-picture-list:not(:last-child) {
+  border-right: 1px solid rgba(243, 129, 129, 80%);
+}
+// появление верхней картинки при наведении 
+.team-block__image-block:hover .team-block__on-the-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-transition: $transition; 
+  -o-transition: $transition; 
+  transition: $transition;
+}
+
+//  сдвиг картинки при фокусе 
+.team-block__image-block:hover {
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}

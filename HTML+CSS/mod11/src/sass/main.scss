@@ -1,0 +1,16 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import 'base.scss';
+// virable
+@import 'virable/style-color.scss';
+@import 'virable/font.scss';
+@import 'virable/virable.scss';
+// main pages
+@import 'header/navigation.scss';
+@import 'main/main-title.scss';
+@import 'main/card-collection.scss';
+@import 'main/team-block.scss';
+@import 'footer/footer.scss';

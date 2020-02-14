@@ -1,0 +1,106 @@
+.card-collection {
+  padding:44px 0 94px ;
+}
+.card-collection__title {
+  color: $blackcolor;
+  margin-bottom: 62px;
+  text-align: center;
+}
+.card-collection__list {
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+  list-style: none;
+  font-family:$fontmontserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.card-collection__line {
+  position: relative;
+  padding-left: 100px;
+  max-width: 400px;
+}
+
+// иконки карточек 
+
+.card-collection__list--icon-alarm::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon/ALARM.svg) no-repeat;
+  display: block;
+  left: 40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+.card-collection__list--icon-graph::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon/LINEGRAPH.svg) no-repeat;
+  display: block;
+  left: 40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+.card-collection__list--icon-computer::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon/COMPUTEROK.svg) no-repeat;
+  display: block;
+  left: 40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+.card-collection__list--icon-book::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon/BOOK2.svg) no-repeat;
+  display: block;
+  left: 40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+.card-collection__list--icon-home::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon/HOME.svg) no-repeat;
+  display: block;
+  left: 40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+.card-collection__list--icon-image::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon/IMAGE.svg) no-repeat;
+  display: block;
+  left: 40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+}
+.card-collection__line-title {
+  margin: 0;
+  text-transform: uppercase;
+  color: $blackcolor;
+  font-weight: 600;
+  font-size: 14px;
+}
+.card-collection__line-paragraph {
+  font-size: 15px;
+  margin: 0;
+  color: $titlecolor;
+}
+.card-collection__line:nth-child(-n+3) {
+  margin-bottom: 100px;
+}
